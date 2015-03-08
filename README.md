@@ -1,9 +1,9 @@
-OpenTBSBundle for Symfony
+OpenTBSBundle for ZF2
 =========================
 
-This bundle is just a convenient way to use OpenTBS, all the credits go to Skrol29 and the TinyButStrong team. http://www.tinybutstrong.com/
+This bundle is just a convenient way to use OpenTBS, all the credits go to https://github.com/mbence, Skrol29 and the TinyButStrong team. http://www.tinybutstrong.com/
 
-OpenTBS - create OpenOffice and Ms Office documents with PHP (and Symfony)
+OpenTBS - create OpenOffice and Ms Office documents with PHP (and ZF2)
 
 
 ## Introduction
@@ -25,12 +25,11 @@ What is special to OpenTBS:
 ## Versions included
 TinyButStrong - 3.9.0
 
-OpenTBS - 1.9.0
+OpenTBS - 1.9.4
 
 ## Requirements
 
-* Symfony2
-* PHP needs to be a minimum version of PHP 5.3.2 (for Symfony2)
+* ZF2
 * It is better to have the [Zlib](http://www.php.net/manual/en/book.zlib.php) extension enabled on your PHP installation. If it's not, [here is what to do](http://www.tinybutstrong.com/plugins/opentbs/tbs_plugin_opentbs.html#zlib).
 
 ## Installation
@@ -42,7 +41,7 @@ Add the following in your composer.json:
 ```json
 {
     "require": {
-        "mbence/opentbs-bundle": "dev-master"
+        "Kipperlenny/opentbs-bundle": "dev-master"
     }
 }
 ```
@@ -50,10 +49,10 @@ Add the following in your composer.json:
 Then download / update by running the command:
 
 ``` bash
-$ php composer.phar update mbence/opentbs-bundle
+$ php composer.phar update Kipperlenny/opentbs-bundle
 ```
 
-Composer will install the bundle to your project's `vendor/mbence/opentbs-bundle` directory.
+Composer will install the bundle to your project's `vendor/Kipperlenny/opentbs-bundle` directory.
 
 ### Step 2: Enable the bundle in your AppKernel
 
@@ -65,7 +64,7 @@ public function registerBundles()
 {
     $bundles = array(
         // ...
-        new MBence\OpenTBSBundle\OpenTBSBundle(),
+        new Kipperlenny\OpenTBSBundle\OpenTBSBundle(),
     );
 }
 ```
