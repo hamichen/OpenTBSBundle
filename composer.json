@@ -1,6 +1,6 @@
 {
     "name": "kipperlenny/opentbs-bundle",
-    "type": "zf2-bundle",
+    "type": "library",
     "description": "OpenTBS Bundle for ZF2 - create OpenOffice and Ms Office documents with ZF2",
     "keywords": ["zf2","TBS","OpenTBS", "document", "OpenOffice", "MS Office", "odt", "docx", "xlsx", "pptx"],
     "homepage": "https://github.com/kipperlenny/OpenTBSBundle",
@@ -20,12 +20,15 @@
         }
     ],
     "require": {
-        "php": ">=5.3.0"
+        "php": ">=5.3.3"
     },
     "autoload": {
         "psr-0": {
-            "Kipperlenny\\OpenTBSBundle": ""
-        }
+            "Kipperlenny\\OpenTBSBundle": "src/"
+        },
+        "classmap": [
+            "./Module.php"
+        ]
     },
     "target-dir": "Kipperlenny/OpenTBSBundle"
 }
