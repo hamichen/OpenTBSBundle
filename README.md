@@ -80,14 +80,12 @@ In TBS you always need a variable base `client` and a variable name `name`.
 
 Then in your controller you need to get the OpenTBS service, load your template and merge the fields (eg. replace the teplate variables).
 ```php
-    // get the service
-    $TBS = $serviceLocator->get('TBS');
-    // load your template
-    $TBS->LoadTemplate('template.docx');
-    // replace variables
-    $TBS->MergeField('client', array('name' => 'Ford Prefect'));
-    // send the file
-    $TBS->Show(OPENTBS_DOWNLOAD, 'file_name.docx');
+...
+use OpentbsBundle\Factory\TBSFactory as TBS;
+...
+
+    $tbs = new TBS();
+    $tbs->LoadTemplate('document.odt');
 ```
 A note for onshow automatic variables:
 You could define your variables within the `onshow` base, (like `onshow.name`), but I would not recommend this practice for it will only work if you use GLOBAL variables.
