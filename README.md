@@ -63,7 +63,7 @@ Composer will install the bundle to your project's `vendor/Kipperlenny/opentbs-b
 ### Step 2: Add the bundle in your application.config.php
 
 ```php
-'OpenTBSBundle',
+'OpentbsBundle',
 ```
 
 #### Now you can use the 'opentbs' service.
@@ -80,12 +80,8 @@ In TBS you always need a variable base `client` and a variable name `name`.
 
 Then in your controller you need to get the OpenTBS service, load your template and merge the fields (eg. replace the teplate variables).
 ```php
-	...
-	use OpenTBSBundle\View\Model\PdfModel;
-	...
-
     // get the service
-    $TBS = $serviceLocator->get('TSB');
+    $TBS = $serviceLocator->get('TBS');
     // load your template
     $TBS->LoadTemplate('template.docx');
     // replace variables

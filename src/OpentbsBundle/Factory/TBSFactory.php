@@ -1,15 +1,18 @@
 <?php
-namespace Kipperlenny\OpenTBSBundle\Factory;
+namespace OpentbsBundle\Factory;
 
 use Zend\ServiceManager\FactoryInterface;
 use Zend\ServiceManager\ServiceLocatorInterface;
 
+include_once(__DIR__ . '/../../lib/tbs_class.php');
+include_once(__DIR__ . '/../../lib/tbs_plugin_opentbs.php');
+
 /**
- * Class TSBFactory
+ * Class TBSFactory
  *
  * @author Lennart Schreiber <kontakt@webzap.eu>
  */
-class TSBFactory extends \clsTinyButStrong implements FactoryInterface
+class TBSFactory extends \clsTinyButStrong implements FactoryInterface
 {
     
     public function __construct()

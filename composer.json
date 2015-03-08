@@ -24,7 +24,7 @@
     },
     "autoload": {
         "psr-4": {
-            "OpenTBSBundle\\": "src/"
+            "OpentbsBundle\\": "src/OpentbsBundle"
         },
         "classmap": [
             "./Module.php"
