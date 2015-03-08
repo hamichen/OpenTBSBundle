@@ -1,15 +1,21 @@
 {
-    "name": "mbence/opentbs-bundle",
-    "type": "symfony-bundle",
-    "description": "OpenTBS Bundle for Symfony2 - create OpenOffice and Ms Office documents with Symfony",
-    "keywords": ["symfony","TBS","OpenTBS", "document", "OpenOffice", "MS Office", "odt", "docx", "xlsx", "pptx"],
-    "homepage": "https://github.com/mbence/OpenTBSBundle",
+    "name": "kipperlenny/opentbs-bundle",
+    "type": "zf2-bundle",
+    "description": "OpenTBS Bundle for ZF2 - create OpenOffice and Ms Office documents with ZF2",
+    "keywords": ["zf2","TBS","OpenTBS", "document", "OpenOffice", "MS Office", "odt", "docx", "xlsx", "pptx"],
+    "homepage": "https://github.com/kipperlenny/OpenTBSBundle",
     "license": "MIT",
     "authors": [
         {
             "name": "Bence Meszaros",
             "email": "bence@bencemeszaros.com",
             "homepage": "http://bencemeszaros.com",
+            "role": "Developer"
+        },
+        {
+            "name": "Lennart Schreiber - WebZap UG (haftungsbeschraenkt)",
+            "email": "kontakt@webzap.eu",
+            "homepage": "https://www.webzap.eu",
             "role": "Developer"
         }
     ],
@@ -18,8 +24,8 @@
     },
     "autoload": {
         "psr-0": {
-            "MBence\\OpenTBSBundle": ""
+            "Kipperlenny\\OpenTBSBundle": ""
         }
     },
-    "target-dir": "MBence/OpenTBSBundle"
+    "target-dir": "Kipperlenny/OpenTBSBundle"
 }
