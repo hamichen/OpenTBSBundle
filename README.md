@@ -40,6 +40,12 @@ Add the following in your composer.json:
 
 ```json
 {
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/kipperlenny/opentbsbundle"
+        }
+    ],
     "require": {
         "Kipperlenny/opentbs-bundle": "dev-master"
     }
@@ -54,19 +60,10 @@ $ php composer.phar update Kipperlenny/opentbs-bundle
 
 Composer will install the bundle to your project's `vendor/Kipperlenny/opentbs-bundle` directory.
 
-### Step 2: Enable the bundle in your AppKernel
+### Step 2: Add the bundle in your application.config.php
 
 ```php
-<?php
-// app/AppKernel.php
-
-public function registerBundles()
-{
-    $bundles = array(
-        // ...
-        new Kipperlenny\OpenTBSBundle\OpenTBSBundle(),
-    );
-}
+'OpenTBSBundle',
 ```
 
 #### Now you can use the 'opentbs' service.
@@ -83,8 +80,12 @@ In TBS you always need a variable base `client` and a variable name `name`.
 
 Then in your controller you need to get the OpenTBS service, load your template and merge the fields (eg. replace the teplate variables).
 ```php
+	...
+	use OpenTBSBundle\View\Model\PdfModel;
+	...
+
     // get the service
-    $TBS = $this->container->get('opentbs');
+    $TBS = $serviceLocator->get('TSB');
     // load your template
     $TBS->LoadTemplate('template.docx');
     // replace variables

@@ -23,12 +23,11 @@
         "php": ">=5.3.3"
     },
     "autoload": {
-        "psr-0": {
-            "Kipperlenny\\OpenTBSBundle": "src/"
+        "psr-4": {
+            "OpenTBSBundle\\": "src/"
         },
         "classmap": [
             "./Module.php"
         ]
-    },
-    "target-dir": "Kipperlenny/OpenTBSBundle"
+    }
 }
