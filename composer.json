@@ -1,5 +1,5 @@
 {
-    "name": "kipperlenny/opentbs-bundle",
+    "name": "hamichen/opentbs-bundle",
     "type": "library",
     "description": "OpenTBS Bundle for ZF2 - create OpenOffice and Ms Office documents with ZF2",
     "keywords": ["zf2","TBS","OpenTBS", "document", "OpenOffice", "MS Office", "odt", "docx", "xlsx", "pptx"],
