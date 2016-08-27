@@ -47,7 +47,7 @@ Add the following in your composer.json:
         }
     ],
     "require": {
-        "Kipperlenny/opentbs-bundle": "dev-master"
+        "hamichen/opentbs-bundle": "dev-master"
     }
 }
 ```
@@ -55,7 +55,7 @@ Add the following in your composer.json:
 Then download / update by running the command:
 
 ``` bash
-$ php composer.phar update Kipperlenny/opentbs-bundle
+$ php composer.phar update hamichen/opentbs-bundle
 ```
 
 Composer will install the bundle to your project's `vendor/Kipperlenny/opentbs-bundle` directory.
